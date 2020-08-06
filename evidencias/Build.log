@@ -1,17 +1,3 @@
-## Informações sobre o exercício "Desafio de CI" (05/08/2020)
-
-Arquivos:<br />
-- cloudbuild.yaml<br />
-- Dockerfile <br />
-- soma.go<br />
-- soma_test.go<br />
-<br />
-Endereço do build: https://console.cloud.google.com/cloud-build/builds/b56059fd-b634-44d3-9da6-6525c4aceeb6?project=codeeducation-test-285316&pli=1<br />
-<br />
-
-Log do build abaixo e também em evidencias/Build.log. <br />
-
-<pre><code>
 starting build "b56059fd-b634-44d3-9da6-6525c4aceeb6"
 
 FETCHSOURCE
@@ -174,6 +160,3 @@ ab60066b1646: Layer already exists
 1ba1431fe2ba: Layer already exists
 1.0.0: digest: sha256:d1dc4cecb85ca75edb546a8fc330455d5709f3cff0152b762f95118f6101895a size: 1990
 DONE
-</code></pre>
-
-
