@@ -22,8 +22,8 @@ steps:
     env: ['PROJECT_ROOT=soma']
       
   - id: "Executando a função soma."
-    name: '"gcr.io/cloud-builders/go'
-    args: ['run', 'soma']
+    name: 'gcr.io/cloud-builders/go'
+    args: ['run', 'soma.go']
     env: ['PROJECT_ROOT=soma']
 
 images:
