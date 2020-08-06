@@ -11,22 +11,20 @@ steps:
       - 'gcr.io/$PROJECT_ID/desafio-ci:${_DESAFIO_CI_VERSION}'
       - '.'
       
-  - id: "Instalando o GO"
+  - id: "Instalando o GO ..."
     name: 'gcr.io/cloud-builders/go'
     args: ['install', '.']
     env: ['PROJECT_ROOT=soma']
 
-  - id: "Rodando testes"
+  - id: "Rodando testes ..."
     name: 'gcr.io/cloud-builders/go'
     args: ['test', 'soma']
     env: ['PROJECT_ROOT=soma']
-  
-    
-  # - id: "Executando a função soma"
-  #   name: "gcr.io/cloud-builders/go"
-  #   args: ["run", "."]
-  #   env: ["GOPATH=."]
-  #   dir: "./src/soma"
+      
+  - id: "Executando a função soma."
+    name: '"gcr.io/cloud-builders/go'
+    args: ['run', 'soma']
+    env: ['PROJECT_ROOT=soma']
 
 images:
   - 'gcr.io/$PROJECT_ID/desafio-ci:latest'
